@@ -4,9 +4,9 @@ ssserver:
   image: ficapy/shadowsocks
   hostname: $DOCKER_INSTANCE_NAME
   ports:
-      - "1314:1314"
+      - "1315:1315"
 #  environment:
 #    - SPRING_CLOUD_CONFIG_URI=http://configserver.local
 #    - SPRING_CLOUD_CONFIG_LABEL=master
 #    - SPRING_CLOUD_CONFIG_PROFILE=pro
-  command:  -s 0.0.0.0 -p 1314 -k $PD -m aes-256-cfb -v
+  command:  -s 0.0.0.0 -p 1315 -k $PD -m aes-256-cfb -v
